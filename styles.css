@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,8 +23,18 @@ input[type="submit"] {
     font-weight: 1000;
     border-radius: 10px;
     color: white;
-    background-color: rgb(41, 41, 41);
+    background-color: dodgerblue;
     border: none;
+    height: 30px;
+}
+
+.remove-button {
+    font-weight: 1000;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    height: 30px;
 }
 
 form {
@@ -37,4 +51,25 @@ form {
 
 input {
     width: 20vw;
+}
+
+#library {
+    display: none;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-left: 8px solid orange;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
 }
